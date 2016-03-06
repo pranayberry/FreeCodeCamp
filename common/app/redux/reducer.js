@@ -19,10 +19,17 @@ export default handleActions(
       ...state,
       points
     }),
-
     [types.updatePoints]: (state, { payload: points }) => ({
       ...state,
       points
+    }),
+    [types.updateWindowHeight]: (state, { payload: windowHeight }) => ({
+      ...state,
+      windowHeight
+    }),
+    [types.updateNavHeight]: (state, { payload: navHeight }) => ({
+      ...state,
+      navHeight
     })
   },
   {
@@ -30,6 +37,8 @@ export default handleActions(
     username: null,
     picture: null,
     points: 0,
-    isSignedIn: false
+    isSignedIn: false,
+    windowHeight: 0,
+    navHeight: 0
   }
 );
