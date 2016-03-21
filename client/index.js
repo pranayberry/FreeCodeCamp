@@ -24,6 +24,7 @@ Rx.config.longStackSupport = !!debug.enabled;
 
 const log = debug('fcc:client');
 const hotReloadTimeout = 5000;
+const DOMContainer = document.getElementById('fcc');
 const initialState = isColdStored() ?
   getColdStorage() :
   window.__fcc__.data;
