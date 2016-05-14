@@ -2037,17 +2037,15 @@
         "<code>functionName();</code>",
         "Each time the function is called it will print out the message <code>\"Hello World\"</code> on the dev console. All of the code between the curly braces will be executed every time the function is called.",
         "<h4>Instructions</h4>",
-        "<ol><li>Create a function called <code>reusableFunction</code> which prints <code>\"Hi World\"</code> to the dev console.</li><li>Call the function.</li></ol>"
+        "<ol><li>Change the function called <code>reusableFunction</code> so that it prints <code>\"Hi World\"</code> to the dev console.</li><li>Call the function.</li></ol>"
       ],
       "challengeSeed": [
-        "// Example",
+        "// Only change code below this line",
         "function reusableFunction() {",
         "  console.log(\"Heyya, World\");",
         "}",
         "",
         "reusableFunction();",
-        "",
-        "// Only change code below this line",
         "",
         ""
       ],
