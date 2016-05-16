@@ -2037,7 +2037,7 @@
         "<code>functionName();</code>",
         "Each time the function is called it will print out the message <code>\"Hello World\"</code> on the dev console. All of the code between the curly braces will be executed every time the function is called.",
         "<h4>Instructions</h4>",
-        "<ol><li>Create a function called <code>reusableFunction</code> which prints <code>\"Hi World\"</code> to the dev console.</li><li>Call the function.</li></ol>"
+        "<ol><li>Create a function called <code>greetFunction</code> which prints <code>\"Hi World\"</code> to the dev console.</li><li>Call the function.</li></ol>"
       ],
       "challengeSeed": [
         "// Example",
@@ -2071,22 +2071,22 @@
         "  console.log = originalConsole.log;",
         "}",
         "",
-        "if (typeof reusableFunction !== \"function\") { ",
-        "  (function() { return \"reusableFunction is not defined\"; })();",
+        "if (typeof greetFunction !== \"function\") { ",
+        "  (function() { return \"greetFunction is not defined\"; })();",
         "} else {",
         "  capture();",
-        "  reusableFunction();  ",
+        "  greetFunction();",
         "  uncapture();",
         "  (function() { return logOutput || \"console.log never called\"; })();",
         "}"
       ],
       "solutions": [
-        "function reusableFunction() {\n  console.log(\"Hi World\");\n}\nreusableFunction();"
+        "function greetFunction() {\n  console.log(\"Hi World\");\n}\ngreetFunction();"
       ],
       "tests": [
-        "assert(typeof reusableFunction === 'function', 'message: <code>reusableFunction</code> should be a function');",
-        "assert(\"Hi World\" === logOutput, 'message: <code>reusableFunction</code> should output \"Hi World\" to the dev console');",
-        "assert(/^\\s*reusableFunction\\(\\)\\s*;/m.test(code), 'message: Call <code>reusableFunction</code> after you define it');"
+        "assert(typeof greetFunction === 'function', 'message: <code>greetFunction</code> should be a function');",
+        "assert(\"Hi World\" === logOutput, 'message: <code>greetFunction</code> should output \"Hi World\" to the dev console');",
+        "assert(/^\\s*greetFunction\\(\\)\\s*;/m.test(code), 'message: Call <code>greetFunction</code> after you define it');"
       ],
       "type": "waypoint",
       "challengeType": 1,
